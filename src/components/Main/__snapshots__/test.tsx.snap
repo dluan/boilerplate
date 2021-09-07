@@ -55,7 +55,7 @@ exports[`<Main/> should render the reading 1`] = `
   <h1
     class="c2"
   >
-    React Avançado
+    Esqueleto de Next JS
   </h1>
   <h2
     class="c3"
