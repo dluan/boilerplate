@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-
-import GlobalStyles from 'styles/global'
+import { ChakraProvider } from '@chakra-ui/react'
+import theme from '../styles/theme'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -39,8 +39,9 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta name="theme-color" content="#06092b" />
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }
