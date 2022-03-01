@@ -1,0 +1,23 @@
+{
+  "name": "Next JS - Esqueleto",
+  "short_name": "Boilerplate",
+  "icons": [
+    {
+      "src": "/img/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "background_color": "#06092B",
+  "description": "Boilerlate utilizando Typescript, React, NextJS, Styled Components e Chakra UI",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#06092B"
+}

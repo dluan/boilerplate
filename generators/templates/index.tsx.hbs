@@ -1,0 +1,15 @@
+import { styled } from 'styles/config'
+
+const Styled{{pascalCase name}} = styled('h2', {
+  color: 'pink'
+})
+
+type {{pascalCase name}}Props = {
+  children: React.ReactNode
+}
+
+const {{pascalCase name}} = ({ children }: {{pascalCase name}}Props) => (
+  <Styled{{pascalCase name}}>{children}</Styled{{pascalCase name}}>
+)
+
+export default {{pascalCase name}}
