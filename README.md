@@ -14,8 +14,12 @@ Veja as principais tecnologias utilizadas:
 - [Storybook](https://storybook.js.org/) - Construir componentes, testa-los e documenta-los.
 - [Design System](https://stitches.dev/) - Construa seu próprio design system com Stitches.
 - [UI components](https://www.radix-ui.com/) - Construção de componentes individualizados e primitivos com Radix
+<<<<<<< HEAD
 - [Apollo](https://www.apollographql.com/) - Comunicação com graphql
 - [Graphql Code Generator](https://www.graphql-code-generator.com/) - Gerar os tipos (typescript) do schema graphql
+=======
+- [uRQL](https://formidable.com/open-source/urql/) - Comunicação com graphql (em breve)
+>>>>>>> b93095f5b4e9849c6fc2ed721b2dbb970d79ac69
 
 <br>
 
@@ -51,6 +55,7 @@ Será gerado dentro da pasta `components`, uma pasta com o nome específicado co
 | `stories.tsx` | A documentação do componente no storybook |
 | `test.tsx` | Arquivo para realização de testes do componente |
 
+<<<<<<< HEAD
 
 <br>
 
@@ -79,3 +84,5 @@ Sempre que criar ou alterar as queries, é preciso gerar os tipos, para isso exe
 ```sh
 yarn gen
 ```
+=======
+>>>>>>> b93095f5b4e9849c6fc2ed721b2dbb970d79ac69
