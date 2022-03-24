@@ -1,15 +1,20 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+
 import { getCssText } from 'styles/config'
 import { globalStyles } from 'styles/global'
+
+import { useApollo } from 'graphql/apollo-config'
+import { ApolloProvider } from '@apollo/client'
 
 globalStyles()
 
 function App({ Component, pageProps }: AppProps) {
+  const apolloClient = useApollo(pageProps.initialApolloState)
   return (
-    <>
+    <ApolloProvider client={apolloClient}>
       <Head>
-        <title>Esqueleto de projeto Next JS</title>
+        <title>Boilerplate of Next JS</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -47,7 +52,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Component {...pageProps} />
-    </>
+    </ApolloProvider>
   )
 }
 

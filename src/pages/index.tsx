@@ -1,23 +1,37 @@
-import Center from 'components/Center'
-import Description from 'components/Description'
-import Title from 'components/Title'
-import Image from 'next/image'
+import { initializeApollo } from 'graphql/apollo-config'
+import {
+  GetDataDocument,
+  GetDataQuery,
+  GetDataQueryVariables
+} from 'graphql/generated'
+import Home from 'templates/Home'
 
-export default function Home() {
-  return (
-    <>
-      <Title align="center">Boilerplate of Next JS</Title>
-      <Description align="center">
-        TypeScript, ReactJS, NextJS, Styled Components e Chakra UI
-      </Description>
-      <Center>
-        <Image
-          src="/img/hero-illustration.svg"
-          alt="Um desenvolvedor de frente para uma tela com código."
-          width={'300rem'}
-          height={'300rem'}
-        />
-      </Center>
-    </>
-  )
+export type HomeProps = {
+  title: string
+  subtitle: string
+  image: string
+}
+
+export async function getStaticProps() {
+  const apolloClient = initializeApollo()
+  const {
+    data: { data }
+  } = await apolloClient.query<GetDataQuery, GetDataQueryVariables>({
+    query: GetDataDocument,
+    variables: {
+      id: 'cl117fbrl1h2c0bkf80sjk4s5'
+    }
+  })
+
+  return {
+    props: {
+      title: data?.title,
+      subtitle: data?.subtitle,
+      image: data?.image.url
+    }
+  }
+}
+
+export default function Index(props: HomeProps) {
+  return <Home {...props} />
 }

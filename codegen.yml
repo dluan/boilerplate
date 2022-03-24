@@ -1,0 +1,11 @@
+overwrite: true
+schema: "https://api-sa-east-1.graphcms.com/v2/cl116z79g233j01z0hntb4r8p/master"
+documents: "src/graphql/queries/*.ts"
+generates:
+  src/graphql/generated/index.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
