@@ -10,6 +10,6 @@ module.exports = withPWA({
   },
   images: {
     loader: 'custom',
-    domains: ['media.graphcms.com']
+    domains: ['media.graphassets.com']
   }
 })

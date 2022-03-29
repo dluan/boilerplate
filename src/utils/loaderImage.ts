@@ -7,11 +7,13 @@ type loaderProps = {
 export function GraphCMSImageLoader({ src, width }: loaderProps) {
   const relativeSrc = (src: string) => src.split('/').pop()
 
-  return `https://media.graphcms.com/resize=width:${width}/${relativeSrc(src)}`
+  return `https://media.graphassets.com/resize=width:${width}/${relativeSrc(
+    src
+  )}`
 }
 
 export function GraphCMSImageLoaderWithSVG({ src }: loaderProps) {
   const relativeSrc = (src: string) => src.split('/').pop()
 
-  return `https://media.graphcms.com/${relativeSrc(src)}`
+  return `https://media.graphassets.com/${relativeSrc(src)}`
 }
