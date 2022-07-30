@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate Next JS
 
-## Getting Started
+- Para rápido início de projeto front-end
 
-First, run the development server:
+- Padronização de código: Utilização de Eslint e editor.config
 
-```bash
-npm run dev
-# or
-yarn dev
+<br>
+
+## Tech
+
+Veja as principais tecnologias utilizadas:
+
+- [Next JS](https://nextjs.org/) - Versão do 12.2 do framework.
+
+- [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html) - Versão 18.0.15.
+
+- [Stitches](https://stitches.dev/) - Construa seu próprio design system com Stitches.
+
+<br>
+
+## Instalação e início
+
+Recomendado utilizar [Node.js](https://nodejs.org/) até a versão 16.13.2.
+
+Instale os pacotes do projeto:
+
+```sh
+
+yarn
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para rodar o projeto em ambiente de desenvolvimento:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```sh
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+yarn dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
 
-## Learn More
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+## Novo componente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+No projeto há o pacote [plop.js](https://plopjs.com/) para agilizar a criação de um novo componente, execute o seguinte comando:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
 
-## Deploy on Vercel
+yarn comp NomeDoComponente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Será gerado dentro da pasta `components`, uma pasta com o nome especificado e sua `index.tsx`
