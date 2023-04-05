@@ -2,7 +2,7 @@
 
 - Para rápido início de projeto front-end
 
-- Padronização de código: Utilização de Eslint e editor.config
+- Padronização de código: Utilização de Eslint, editor.config e prettier
 
 <br>
 
@@ -10,23 +10,23 @@
 
 Veja as principais tecnologias utilizadas:
 
-- [Next JS](https://nextjs.org/) - Versão do 12.2 do framework.
+- [Next JS 13](https://beta.nextjs.org/docs) - Versão 13 do framework com appDir.
 
-- [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html) - Versão 18.0.15.
+- [React 18](https://reactjs.org/blog/2022/03/29/react-v18.html) - Versão 18.2.0.
 
-- [Stitches](https://stitches.dev/) - Construa seu próprio design system com Stitches.
+- [Tailwind CSS](https://tailwindcss.com/)
 
 <br>
 
 ## Instalação e início
 
-Recomendado utilizar [Node.js](https://nodejs.org/) até a versão 16.13.2.
+Necessário utilizar [Node.js](https://nodejs.org/) a partir da versão 16.8.0.
 
 Instale os pacotes do projeto:
 
 ```sh
 
-yarn
+npm install
 
 ```
 
@@ -34,20 +34,6 @@ Para rodar o projeto em ambiente de desenvolvimento:
 
 ```sh
 
-yarn dev
+npm run dev
 
 ```
-
-<br>
-
-## Novo componente
-
-No projeto há o pacote [plop.js](https://plopjs.com/) para agilizar a criação de um novo componente, execute o seguinte comando:
-
-```sh
-
-yarn comp NomeDoComponente
-
-```
-
-Será gerado dentro da pasta `components`, uma pasta com o nome especificado e sua `index.tsx`
